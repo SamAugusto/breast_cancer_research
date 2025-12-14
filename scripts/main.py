@@ -2,6 +2,7 @@ import seaborn as sns
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import sys
 
 def filter_by_diagnosis(df:pd.DataFrame, diag: str): # diag short for diagnosis like M for malign
     '''Takes a data frame and a diagnosis as an argument and returns a series mask with data only based on the diagnosis'''
@@ -16,13 +17,13 @@ def bar_plot_2_data(normal, affected) -> None: # Takes 2 data column
     takes as input two np.float64'''
 
     data_to_plot = {"Normal":normal, "Affected": affected}
-    plot = sns.barplot(data_to_plot,palette = ["#43A35F","#88413A"])
-    plot.set(ylabel = "Average Radius Mean (Pixel Count)")
-    plt.show()
+    fig, ax = plt.subplots()
+    sns.barplot(data=data_to_plot, palette=["#43A35F", "#88413A"], ax=ax)
+    ax.set(ylabel = "Average Radius Mean (Pixel Count)")
+    fig.savefig(sys.stdout.buffer, format="png")
     return None
 if __name__ == "__main__":
     cancer_data = pd.read_csv("../data/breast_cancer_dataset.csv.gz") # Takes the raw data as an input and returns a dataframe (pandas)
     avg_b_radius_mean_cancer_data = np.average(cancer_data[filter_by_diagnosis(cancer_data,"B")]["radius_mean"])
     avg_m_radius_mean_cancer_data = np.average(cancer_data[filter_by_diagnosis(cancer_data,"M")]["radius_mean"])
-    print("benign", avg_b_radius_mean_cancer_data,"Malign ", avg_m_radius_mean_cancer_data)
     bar_plot_2_data(avg_b_radius_mean_cancer_data,avg_m_radius_mean_cancer_data)
