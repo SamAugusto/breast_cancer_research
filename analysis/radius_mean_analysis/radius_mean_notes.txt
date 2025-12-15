@@ -1,0 +1,18 @@
+Findings from: 
+
+Thompson, R. H., Kurta, J. M., Kaag, M., Tickoo, S. K., Kundu, S., Katz, D., Nogueira, L., Reuter, V. E., & Russo, P. (2009). Tumor size is associated with malignant potential in renal cell carcinoma cases. The Journal of urology, 181(5), 2033–2036. https://doi.org/10.1016/j.juro.2009.01.027
+
+and
+
+Sippel RS, Elaraj DM, Khanafshar E, Zarnegar R, Kebebew E, Duh QY, Clark OH. Tumor size predicts malignant potential in Hürthle cell neoplasms of the thyroid. World J Surg. 2008 May;32(5):702-7. doi: 10.1007/s00268-007-9416-5. PMID: 18224463.
+
+
+Confirm what we found that tumor size increase does increase the chance of a tumor being malign. So this is a big factor for diagnosis and predictions.
+
+
+Duke website and other random websites claim that is false or not entire true however as of today I cannot find any source to the studies they claimed they performed.
+
+Accredited journals such as Nature and the New England Journal of Medicine have no studies talking about tumor size and malignity from what I found
+I searched for "Tumor Sized and Malignity" on both journals  and I have yet to find any studies reporting on it.
+                                                                                                 
+
